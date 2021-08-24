@@ -1,31 +1,111 @@
-<head>
-  
-</head>
-<h1>Book Selling App</h1>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f1dd8af940.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+        #nav {
+            font-size: large;
+        }
+        
+        #body {
+            text-align: center;
+        }
+        
+        #footer {
+            margin-left: 10%;
+        }
+        
+        p {
+            font-size: xx-large;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
 
 <body>
-  <img src="JavaGems.jpg" width="400px" height="300px" />
-  <br /><br /><h4>Java Gems</h4>
-  <br />
-  The support of Java Report by the pioneers of the language has always made it the source for Java development. 
-  From the very beginnings of Java, Java Report was there, examining each new aspect of the language with a clear independent eye. 
-  Now, Dwight Deugo, the editor of Java Report, has gathered the most important articles from the first year of the magazine. 
-  Written by a savvy Who's Who of industry experts, Java Gems covers today's most important aspects of Java development. 
-  Top writers and developers walk you through the topic areas that are essential to today's Java developers, 
-  including multitasking, design patterns, class libraries, persistence, distributed computing, and Java vs C++.
-  
-  <br /><br />
-  <img src="python.jpg" width="400px" height="300px" />
-  <br /><br /><h4>Python for Beginners</h4>
-  <br />
-  
-  Python is an amazing programming language. It can be applied to almost any programming task, allows for rapid development and debugging, and brings the support of what is arguably the most welcoming user community.
-  <br /><br />
-  <img src="C.jpg" width="400px" height="300px" />
-  <br /><br /><h4>Let Us C</h4><br />
-  
-  Explained in comprehensive manner, the book aims to provide more brief information to all C programming beginners as well as established programmers. 
-  'Let Us C' can help the readers to prepare not only for the theoretical exams but for the practical exams as well.
-  
+    <div id="body">
+        <h1 style="text-align: center;">CameraDeal</h1>
+
+        <div id="nav">
+            <a href="#">Home</h4></a>
+            <a href="#">Products</h4></a>
+            <a href="#">About</h4></a>
+            <a href="#">Contact Us</h4></a>
+
+        </div>
+        <hr><br /><br />
+        <div class="parent">
+
+            <div class="child">
+                <img src="images/canon.jpg" /><br /><br />
+                <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-warning mt-3"><i class="fas fa-bolt"></i>  Buy Now  </a>
+            </div>
+            <div class="child">
+                <h4>Canon EOS 200D II DSLR Camera EF-S18-55mm IS STM (Black)</h4>
+            </div>
+        </div>
+        <div class="parent">
+
+            <div class="child">
+                <img src="images/sony-1.jpg" /><br /><br />
+                <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-warning mt-3"><i class="fas fa-bolt"></i>  Buy Now  </a>
+            </div>
+            <div class="child">
+                <h4>SONY RX10M4 (20.2 MP, 25x Optical Zoom, 100x Digital Zoom, Black)</h4>
+            </div>
+        </div>
+
+        <div class="parent">
+
+            <div class="child">
+                <img src="images/canon-2.jpg" /><br /><br />
+                <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-warning mt-3"><i class="fas fa-bolt"></i>  Buy Now  </a>
+            </div>
+            <div class="child">
+                <h4>CANON RX10M4 (20.2 MP, 25x Optical Zoom, 100x Digital Zoom, Black)</h4>
+            </div>
+        </div>
+        <div class="parent">
+
+            <div class="child">
+                <img src="images/sony-3.jpg" /><br /><br />
+                <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-warning mt-3"><i class="fas fa-bolt"></i>  Buy Now  </a>
+            </div>
+            <div class="child">
+                <h4>SONY Alpha ILCE-6000Y/b in5 Mirrorless Camera Body with Dual Lens : 16-50 mm & 55-210 mm (Black)</h4>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="footer">
+        <h3>Contact Us</h3>
+        <form>
+            Name <input type="text" placeholder="Your name" />
+            <br /> <br /> Contact No <input type="text" placeholder="Mobile Number" />
+            <br /> <br /> <label for="feedback">Feedback</label><textarea id="feedback" rows="5" cols="8" placeholder="Your valuable feedback"></textarea>
+            <br /> <br />
+            <a class="btn btn-info">Send</a>
+        </form>
+    </div>
+    <div style="text-align: center;">
+        <p><a href="#" class="icon"><i class="fab fa-instagram"></i></a> &nbsp;&nbsp;&nbsp;
+            <a href="#" class="icon"><i class="fab fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;
+            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+            <a href="#" class="icon"><i class="fab fa-github"></i></a>
+        </p>
+    </div>
+
+
 </body>
+
+</html>
