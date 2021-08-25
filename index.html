@@ -11,18 +11,69 @@
     <style>
         #nav {
             font-size: large;
-        }
-        
-        #body {
+            background-color: bisque;
             text-align: center;
         }
         
         #footer {
-            margin-left: 10%;
+            background-color: bisque;
         }
         
-        p {
+        h4 {
+            font-size: larger;
+        }
+        
+        p,
+        li {
+            font-size: large;
+        }
+        
+        span {
             font-size: xx-large;
+        }
+        
+        .child {
+            width: 40%;
+            height: 400px;
+            margin-left: 5%;
+        }
+        
+        .child2 {
+            width: 35%;
+            height: 400px;
+        }
+        
+        .parent {
+            background-color: bisque;
+        }
+        
+        img {
+            height: 500px;
+            width: 400px;
+        }
+        
+        .parent1 {
+            flex-direction: row;
+            display: flex;
+            margin-bottom: 15%;
+        }
+        
+        #pricecut {
+            text-decoration: line-through;
+            font-size: larger;
+        }
+        
+        #reviews {
+            font-size: larger;
+        }
+        
+        #off {
+            font-size: larger;
+            color: green;
+        }
+        
+        #social {
+            background-blend-mode: pink;
         }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -33,59 +84,119 @@
 </head>
 
 <body>
-    <div id="body">
-        <h1 style="text-align: center;">CameraDeal</h1>
 
-        <div id="nav">
-            <a href="#">Home</h4></a>
-            <a href="#">Products</h4></a>
-            <a href="#">About</h4></a>
-            <a href="#">Contact Us</h4></a>
+    <h1 style="text-align: center;">CameraDeal</h1>
 
+    <div id="nav">
+        <a href="#">Home</h4></a>&nbsp;&nbsp;
+        <a href="#">Products</h4></a>&nbsp;&nbsp;
+        <a href="#">About</h4></a>&nbsp;&nbsp;
+        <a href="#">Contact Us</h4></a>&nbsp;&nbsp;
+
+    </div>
+    <hr><br /><br />
+
+    <div class="parent1">
+        <div class="child">
+            <img src="images/canon.jpg" /><br /><br />
+            <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-warning mt-3"><i class="fas fa-bolt"></i>  Buy Now  </a>
         </div>
-        <hr><br /><br />
-        <div class="parent">
-
-            <div class="child">
-                <img src="images/canon.jpg" /><br /><br />
-                <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-warning mt-3"><i class="fas fa-bolt"></i>  Buy Now  </a>
-            </div>
-            <div class="child">
-                <h4>Canon EOS 200D II DSLR Camera EF-S18-55mm IS STM (Black)</h4>
-            </div>
-        </div>
-        <div class="parent">
-
-            <div class="child">
-                <img src="images/sony-1.jpg" /><br /><br />
-                <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-warning mt-3"><i class="fas fa-bolt"></i>  Buy Now  </a>
-            </div>
-            <div class="child">
-                <h4>SONY RX10M4 (20.2 MP, 25x Optical Zoom, 100x Digital Zoom, Black)</h4>
-            </div>
-        </div>
-
-        <div class="parent">
-
-            <div class="child">
-                <img src="images/canon-2.jpg" /><br /><br />
-                <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-warning mt-3"><i class="fas fa-bolt"></i>  Buy Now  </a>
-            </div>
-            <div class="child">
-                <h4>CANON RX10M4 (20.2 MP, 25x Optical Zoom, 100x Digital Zoom, Black)</h4>
-            </div>
-        </div>
-        <div class="parent">
-
-            <div class="child">
-                <img src="images/sony-3.jpg" /><br /><br />
-                <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-warning mt-3"><i class="fas fa-bolt"></i>  Buy Now  </a>
-            </div>
-            <div class="child">
-                <h4>SONY Alpha ILCE-6000Y/b in5 Mirrorless Camera Body with Dual Lens : 16-50 mm & 55-210 mm (Black)</h4>
-            </div>
+        <div class="child2">
+            <h2>Canon EOS 200D II DSLR Camera EF-S18-55mm IS STM (Black)</h2>
+            <a href="#" class="btn btn-success">4.5 <i class="fas fa-star"></i></a>&nbsp;&nbsp;<span id="reviews">2,658 Ratings & 437 Reviews</span><br />
+            <span id="price">
+                ₹51,499
+            </span><span id="pricecut">₹52,995</span> <span id="off">2% off</span><br /><br />
+            <p>EOS 200D II is Canon’s lightest DSLR with a Vari-angle Touch Screen LCD. Weighing only a little heavier than a bottle of water*, the camera slides right into your bag for that everyday photography. Packed into its petite body is Canon’s 24.1megapixel
+                APS-C CMOS sensor, DIGIC 8 processor and a bunch of features that would make snapping your everyday life seamlessly easier.
+                <br /><br />
+                <ul>
+                    <li>Compact and lightweight design</li>
+                    <li>Quick focusing in Live View mode with Dual pixel CMOS AF</li>
+                    <li>Vari-angle touchscreen LCD</li>
+                    <li>24.1megapixel APS-C CMOS Sensor</li>
+                    <li>Standard ISO 100 - 6400 (expandable to 12800)</li>
+                </ul>
+            </p>
         </div>
     </div>
+
+    <div class="parent1">
+
+        <div class="child">
+            <img src="images/sony-1.jpg" /><br /><br />
+            <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-warning mt-3"><i class="fas fa-bolt"></i>  Buy Now  </a>
+        </div>
+        <div class="child">
+            <h2>SONY RX10M4 (20.2 MP, 25x Optical Zoom, 100x Digital Zoom, Black)</h2>
+            <a href="#" class="btn btn-success">4.2 <i class="fas fa-star"></i></a>&nbsp;&nbsp;<span id="reviews">1,658 Ratings & 437 Reviews</span><br />
+            <span id="price">
+                ₹45,550
+            </span><span id="pricecut">₹49,999</span> <span id="off">10% off</span><br /><br />
+            <p>
+                Now, it's easier to capture more stunning stills and movies at every opportunity. The new RX10 IV is much more than a solid, smart all-in-one compact—it packs enough ground-breaking innovations for even professionals to marvel at, from the ultra-fast
+                AF system of its kind, to legendary optics throughout its 25x zoom range, to extraordinarily precise, powerful image processing and more.
+
+                <br /><br />
+                <ul>
+                    <li>Compact and lightweight design</li>
+                    <li>Quick focusing in Live View mode with Dual pixel CMOS AF</li>
+                    <li>Vari-angle touchscreen LCD</li>
+                    <li>24.1megapixel APS-C CMOS Sensor</li>
+                    <li>Standard ISO 100 - 6400 (expandable to 12800)</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="parent1">
+
+        <div class="child">
+            <img src="images/canon-3.jpg" /><br /><br />
+            <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-warning mt-3"><i class="fas fa-bolt"></i>  Buy Now  </a>
+        </div>
+        <div class="child">
+            <h2>CANON RX10M4 (20.2 MP, 25x Optical Zoom, 100x Digital Zoom, Black)</h2>
+            <a href="#" class="btn btn-success">3.9 <i class="fas fa-star"></i></a>&nbsp;&nbsp;<span id="reviews">658 Ratings & 37 Reviews</span><br />
+            <span id="price">
+                ₹32,999
+            </span><span id="pricecut">₹34,999</span> <span id="off">8% off</span><br /><br />
+            <p>Being Canon’s lightest Full-Frame Mirrorless Interchangeable Lens Camera with EVF, EOS RP has a 26.2megapixel CMOS sensor and shoot 4K UHD videos*. Dual Sensing IS made possible with RF mount technology and DIGIC 8 processor, providing five
+                stops of shutter speed for still images.<br/><br/>
+                <ul>
+                    <li>Compact and lightweight design</li>
+                    <li>Quick focusing in Live View mode with Dual pixel CMOS AF</li>
+                    <li>Vari-angle touchscreen LCD</li>
+                    <li>24.1megapixel APS-C CMOS Sensor</li>
+                    <li>Standard ISO 100 - 6400 (expandable to 12800)</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <div class="parent1">
+
+        <div class="child">
+            <img src="images/sony-3.jpg" /><br /><br />
+            <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-warning mt-3"><i class="fas fa-bolt"></i>  Buy Now  </a>
+        </div>
+        <div class="child">
+            <h2>SONY Alpha ILCE-6000Y/b in5 Mirrorless Camera Body with Dual Lens : 16-50 mm & 55-210 mm (Black)</h2>
+            <a href="#" class="btn btn-success">4.7 <i class="fas fa-star"></i></a>&nbsp;&nbsp;<span id="reviews">258 Ratings & 47 Reviews</span><br />
+            <span id="price">
+                ₹1,47,990
+            </span><span id="pricecut">₹1,99,999</span> <span id="off">20% off</span><br /><br />
+            <p>Lens SELP1650, Lens SEL55210, Lens hood, Lens cap, Lens rear cap, Power cord, Rechargeable Battery NP-FW50, AC Adaptor AC-UB10, Shoulder strap, Eyepiece cup, Micro USB cable<br/><br/>
+                <ul>
+                    <li>Compact and lightweight design</li>
+                    <li>Quick focusing in Live View mode with Dual pixel CMOS AF</li>
+                    <li>Vari-angle touchscreen LCD</li>
+                    <li>24.1megapixel APS-C CMOS Sensor</li>
+                    <li>Standard ISO 100 - 6400 (expandable to 12800)</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
     <hr>
     <div id="footer">
         <h3>Contact Us</h3>
@@ -98,11 +209,11 @@
         </form>
     </div>
     <div style="text-align: center;">
-        <p><a href="#" class="icon"><i class="fab fa-instagram"></i></a> &nbsp;&nbsp;&nbsp;
+        <span id="social"><a href="#" class="icon"><i class="fab fa-instagram"></i></a> &nbsp;&nbsp;&nbsp;
             <a href="#" class="icon"><i class="fab fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;
             <a href="#" class="icon"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
             <a href="#" class="icon"><i class="fab fa-github"></i></a>
-        </p>
+        </span>
     </div>
 
 
