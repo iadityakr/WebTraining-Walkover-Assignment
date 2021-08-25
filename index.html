@@ -16,11 +16,13 @@
         }
         
         #footer {
-            background-color: bisque;
+            background-color: lightgrey;
+            flex-direction: row;
+            display: flex;
         }
         
         h4 {
-            font-size: larger;
+            font-size: large;
         }
         
         p,
@@ -29,7 +31,7 @@
         }
         
         span {
-            font-size: xx-large;
+            font-size: x-large;
         }
         
         .child {
@@ -60,20 +62,25 @@
         
         #pricecut {
             text-decoration: line-through;
-            font-size: larger;
+            font-size: large;
         }
         
         #reviews {
-            font-size: larger;
+            font-size: large;
         }
         
         #off {
-            font-size: larger;
+            font-size: large;
             color: green;
         }
         
-        #social {
-            background-blend-mode: pink;
+        .social {
+            background-color: lightgrey;
+            width: 50%;
+        }
+        
+        .contactus {
+            width: 50%;
         }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -199,22 +206,67 @@
 
     <hr>
     <div id="footer">
-        <h3>Contact Us</h3>
-        <form>
-            Name <input type="text" placeholder="Your name" />
-            <br /> <br /> Contact No <input type="text" placeholder="Mobile Number" />
-            <br /> <br /> <label for="feedback">Feedback</label><textarea id="feedback" rows="5" cols="8" placeholder="Your valuable feedback"></textarea>
-            <br /> <br />
-            <a class="btn btn-info">Send</a>
-        </form>
+        <div class="contactus">
+            <h3>Contact Us</h3>
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Your name" />
+                        </td>
+                    </tr><br />
+                    <tr>
+                        <td>
+                            Contact No
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Mobile Number" />
+                        </td>
+                    </tr><br />
+                    <tr>
+                        <td>
+                            Feedback
+                        </td>
+                        <td>
+                            <textarea id="feedback" rows="5" cols="8" placeholder="Your valuable feedback"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <a class="btn btn-info">Send</a>
+            </form>
+        </div>
+
+
+
+        <div class="social" style="text-align: center;">
+
+            <table>
+                <tr>
+                    <td>
+                        <h3>Follow us</h3>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span id="social"><a href="#" class="icon"><i class="fab fa-instagram"></i>  </a></td><td> &nbsp;&nbsp;&nbsp; Instagram</td>
+                </tr> 
+                <tr>
+                    <td><span id="social"><a href="#" class="icon"><i class="fab fa-facebook"></i>  </a></td><td> &nbsp;&nbsp;&nbsp; Facebook</td>
+                </tr>
+                <tr>
+                    <td><span id="social"><a href="#" class="icon"><i class="fab fa-twitter"></i>  </a></td><td>Twitter</td>
+                </tr>
+                <tr>
+                    <td><span id="social"><a href="#" class="icon"><i class="fab fa-github"></i>  </a></td><td>  &nbsp;&nbsp;GitHub</td>
+                </tr>           
+                        
+            </table>
+        </div>
     </div>
-    <div style="text-align: center;">
-        <span id="social"><a href="#" class="icon"><i class="fab fa-instagram"></i></a> &nbsp;&nbsp;&nbsp;
-            <a href="#" class="icon"><i class="fab fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;
-            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
-            <a href="#" class="icon"><i class="fab fa-github"></i></a>
-        </span>
-    </div>
+
 
 
 </body>
