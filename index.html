@@ -8,84 +8,9 @@
     <script src="https://kit.fontawesome.com/f1dd8af940.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <style>
-        #nav {
-            font-size: large;
-            background-color: bisque;
-            text-align: center;
-        }
-        
-        #footer {
-            background-color: lightgrey;
-            flex-direction: row;
-            display: flex;
-        }
-        
-        h4 {
-            font-size: large;
-        }
-        
-        p,
-        li {
-            font-size: large;
-        }
-        
-        span {
-            font-size: x-large;
-        }
-        
-        .child {
-            width: 40%;
-            height: 400px;
-            margin-left: 5%;
-        }
-        
-        .child2 {
-            width: 35%;
-            height: 400px;
-        }
-        
-        .parent {
-            background-color: bisque;
-        }
-        
-        img {
-            height: 500px;
-            width: 400px;
-        }
-        
-        .parent1 {
-            flex-direction: row;
-            display: flex;
-            margin-bottom: 15%;
-        }
-        
-        #pricecut {
-            text-decoration: line-through;
-            font-size: large;
-        }
-        
-        #reviews {
-            font-size: large;
-        }
-        
-        #off {
-            font-size: large;
-            color: green;
-        }
-        
-        .social {
-            background-color: lightgrey;
-            width: 50%;
-        }
-        
-        .contactus {
-            width: 50%;
-            margin-left: 4%;
-        }
-    </style>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <title>Document</title>
@@ -109,7 +34,7 @@
             <img src="images/canon.jpg" /><br /><br />
             <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-warning mt-3"><i class="fas fa-bolt"></i>  Buy Now  </a>
         </div>
-        <div class="child2">
+        <div class="child">
             <h2>Canon EOS 200D II DSLR Camera EF-S18-55mm IS STM (Black)</h2>
             <a href="#" class="btn btn-success">4.5 <i class="fas fa-star"></i></a>&nbsp;&nbsp;<span id="reviews">2,658 Ratings & 437 Reviews</span><br />
             <span id="price">
@@ -127,9 +52,9 @@
                 </ul>
             </p>
         </div>
-    </div>
 
-    <div class="parent1">
+
+
 
         <div class="child">
             <img src="images/sony-1.jpg" /><br /><br />
@@ -155,9 +80,9 @@
                 </ul>
             </p>
         </div>
-    </div>
 
-    <div class="parent1">
+
+
 
         <div class="child">
             <img src="images/canon-3.jpg" /><br /><br />
@@ -180,8 +105,7 @@
                 </ul>
             </p>
         </div>
-    </div>
-    <div class="parent1">
+
 
         <div class="child">
             <img src="images/sony-3.jpg" /><br /><br />
@@ -203,56 +127,54 @@
                 </ul>
             </p>
         </div>
-    </div>
+        <hr>
+        <div id="footer">
+            <div class="contactus">
+                <h3>Contact Us</h3>
+                <form>
+                    <table>
+                        <tr>
+                            <td>
+                                Name
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Your name" />
+                            </td>
+                        </tr><br />
+                        <tr>
+                            <td>
+                                Contact No
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Mobile Number" />
+                            </td>
+                        </tr><br />
+                        <tr>
+                            <td>
+                                Feedback
+                            </td>
+                            <td>
+                                <textarea id="feedback" rows="5" cols="8" placeholder="Your valuable feedback"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <a class="btn btn-info">Send</a>
+                </form>
+            </div>
 
-    <hr>
-    <div id="footer">
-        <div class="contactus">
-            <h3>Contact Us</h3>
-            <form>
+
+
+            <div class="social" style="text-align: center;">
+
                 <table>
                     <tr>
                         <td>
-                            Name
+                            <h3>Follow us</h3>
                         </td>
-                        <td>
-                            <input type="text" placeholder="Your name" />
-                        </td>
-                    </tr><br />
-                    <tr>
-                        <td>
-                            Contact No
-                        </td>
-                        <td>
-                            <input type="text" placeholder="Mobile Number" />
-                        </td>
-                    </tr><br />
-                    <tr>
-                        <td>
-                            Feedback
-                        </td>
-                        <td>
-                            <textarea id="feedback" rows="5" cols="8" placeholder="Your valuable feedback"></textarea>
-                        </td>
+                        <td></td>
                     </tr>
-                </table>
-                <a class="btn btn-info">Send</a>
-            </form>
-        </div>
-
-
-
-        <div class="social" style="text-align: center;">
-
-            <table>
-                <tr>
-                    <td>
-                        <h3>Follow us</h3>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td><span id="social"><a href="#" class="icon"><i class="fab fa-instagram"></i>  </a></td><td> &nbsp;&nbsp;&nbsp; Instagram</td>
+                    <tr>
+                        <td><span id="social"><a href="#" class="icon"><i class="fab fa-instagram"></i>  </a></td><td> &nbsp;&nbsp;&nbsp; Instagram</td>
                 </tr> 
                 <tr>
                     <td><span id="social"><a href="#" class="icon"><i class="fab fa-facebook"></i>  </a></td><td> &nbsp;&nbsp;&nbsp; Facebook</td>
@@ -267,6 +189,9 @@
             </table>
         </div>
     </div>
+    </div>
+
+    
 
 
 
